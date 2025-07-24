@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+    <title>form contact</title>
+</head>
+<body>
+    <div class="success-message" id="successMessage">
+        <h2><img src="./assets/icon-success-check.svg"  alt="s"/>Message sent </h2>
+        <p>Thanks for completening the form. we will be in touch</p>
+        
+        
+    </div>
+    <form >
+        <h1>Contact Us</h1>
+        <div  class="form-group1">
+            <div>
+            <label for="firstName">first name <span>*</span></label>
+            <input type="text" name="firstName" id="firstName"  >
+            <p id="firstNameError"></p>
+            </div>
+            <div>
+
+            <label for="secondName">last name <span>*</span></label>
+            <input type="text" name="secondName" id="secondName"  >
+              <p id="secondNameError"></p>
+            </div>
+        </div>
+        <label for="email">Email Address <span>*</span></label>
+        <input type="email" name="email" id="email" >
+          <p id="emailError"></p>
+        <div class="form-group2">
+            <label for="QueryType">Query Type <span>*</span></label>
+        <div class="radio-group">
+            <div id="queryTypeDiv1">
+                <input type="radio" name="QueryType" id="QueryType1" value="General Inquiry" >
+                <label for="QueryType1">General Inquiry</label>
+            </div>
+              
+            <div id="queryTypeDiv2">
+                <input type="radio" name="QueryType" id="QueryType2" value="Technical Support" >
+                <label for="QueryType2">Technical Support</label>
+            </div>  
+            </div>
+              <p id="queryTypeError"></p>
+        </div>
+        <label for="message">Message <span>*</span></label>
+        <textarea name="message" id="message" rows="4" ></textarea>
+          <p id="messageError"></p>
+        <div class="form-group3">
+            <label for="subscribe">I consent: to being contacted by my team</label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+             
+        </div>
+         <p id="subscribeError"></p>
+            <button type="submit" id="submitButton">Submit</button>
+    </form>
+    <script src="index.js"></script>
+
+    
+</body>
+</html>
